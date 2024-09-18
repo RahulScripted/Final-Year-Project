@@ -1,0 +1,204 @@
+/* <------------ Scroll Bar -------------> */
+
+/* width */
+::-webkit-scrollbar {
+    width: 12.5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+      background: linear-gradient(to bottom, #d79c2e,#ffcd6d);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      border-radius: 25px;
+      transition: 0.4s ease;
+      cursor: pointer;
+}
+/* <------- About Us Start ---------> */
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    gap: 80px;
+}
+.upper-section{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding-inline: 45px;
+}
+.upper-section .img-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper-section .img-content img{
+    width: 295px;
+}
+.upper-section .text-content{
+    display: flex;
+    flex-direction: column;
+}
+.upper-section .text-content h5{
+    font-size: var(--small-font);
+    color: #12bd1e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.upper-section .text-content p{
+    font-size: var(--p-font);
+    color: var(--p-colour);
+}
+.leader,
+.swiper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.leader h5{
+    font-size: var(--small-medium-font);
+    color: #12bd1e;
+    font-weight: 600;
+}
+.leader .mentor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.leader .mentor img{
+    width: 300px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+}
+.leader .mentor h3{
+    font-size: var(--small-font);
+}
+.leader .mentor p{
+    font-size: var(--p-font);
+    color: var(--p-colour);
+}
+h5{
+    font-size: var(--small-medium-font);
+    color: #12bd1e;
+    font-weight: 600;
+}
+.swiper {
+    width: 100%;
+    height: 465px;
+    cursor: none;
+}
+#cursor{
+    width: 75px;
+    height: 75px;
+    background-color: #222;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+}
+#cursor h5{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ececec;
+    border-radius: 10px;
+}
+.swiper-slide img {
+    display: block;
+    width: 300px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+}
+.swiper-slide h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.swiper-slide p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+.swiper-slide .connect{
+    padding: 8px 35px;
+    font-size: 17px;
+    background-color: #ffffff53;
+    border: 1px solid #555;
+    outline: none;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.swiper-slide .connect:hover{
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+.swiper-pagination-bullet-active{
+    background: #222;
+    width: 25px;
+    height: 10px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* <------- About Us End ---------> */
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .upper-section .img-content img{
+        width: 300px;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .upper-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .upper-section .img-content img{
+        width: 100%;
+    }
+    .upper-section .text-content p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .upper-section{
+        padding-inline: 0;
+    }
+    .swiper{
+        cursor: pointer;
+    }
+    #cursor{
+        display: none;
+    }
+}
