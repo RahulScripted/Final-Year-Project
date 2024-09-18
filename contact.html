@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Contact US</title>
+
+    <!-- Title of Website -->
+    <meta name="title" content = "GenArtLab">
+
+    <!-- Description of Website -->
+    <meta name="description" content = "Transform your ideas into stunning visuals with our AI-powered image generator">
+
+    <!-- Image of Website -->
+    <link rel="icon" href="Assests/Img/banner-pic.webp" type="image/icon type">
+
+    <!-- Link To General CSS -->
+    <link rel="stylesheet" href="Assests/CSS/style.css">
+
+    <!-- Link To Contact CSS -->
+    <link rel="stylesheet" href="Assests/CSS/contact.css">
+
+    <!-- Link To Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <special-header></special-header>
+    <div class="container">
+        <h3 class="heading">Get In Touch</h3>
+        <div class="box">
+            <form action="https://api.web3forms.com/submit" method="POST" class="left">
+                
+                <input type="hidden" name="access_key" value="5a7f9c01-b7e7-4674-89e9-f83ad167e5ab">
+                
+                <input type="text" name = "name" placeholder="Enter Your Name" required>
+                <input type="email" name ="email" placeholder="Enter Your E-mail" required>
+                <textarea name = "message" placeholder="Enter Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="right">
+                <div class="up">
+                    <div class="context">
+                        <i class='bx bxs-map'></i>
+                        <span>Puabagan, Bankura, West Bengal</span>
+                    </div>
+                    <div class="context">
+                        <i class='bx bxs-phone'></i>
+                        <span>+91 9883067644</span>
+                    </div>
+                    <div class="context">
+                        <i class='bx bxl-gmail'></i>
+                        <span>bankuraunnayanigroupo@gmail.com</span>
+                    </div>
+                </div>
+                <div class="down">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14667.712275099244!2d87.01556861895743!3d23.209291899404697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f7afabd5730727%3A0x70e3a0aac8f0401e!2sBankura%20Unnayani%20Institute%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1724059717887!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link To Swiper JavaScript -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link To Header Management JavaScript -->
+    <script src="Assests/JavaScript/HeaderManagement.js"></script>
+
+
+    <script>
+        // Animation
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '70px',
+            duration: 2200,
+            delay: 200,
+            reset: true,
+            interval: 300,
+        })
+
+        sr.reveal('h3',{origin:'top',interval: 100,delay: 250})
+        sr.reveal('.left input', { origin: 'left', interval: 300, delay: 100 });
+        sr.reveal('.left textarea', { origin: 'left', delay: 250 });
+        sr.reveal('.left button', { origin: 'left', delay: 300 });
+
+        sr.reveal('.right .up .context',{origin:'right',interval: 400,delay : 150})
+        sr.reveal('.right .down',{origin:'right',delay : 250})
+
+    </script>
+</body>
+</html>

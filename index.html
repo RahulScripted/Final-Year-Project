@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>GenArtLab</title>
+
+    <!-- Title of Website -->
+    <meta name="title" content = "GenArtLab">
+
+    <!-- Description of Website -->
+    <meta name="description" content = "Transform your ideas into stunning visuals with our AI-powered image generator">
+
+    <!-- Image of Website -->
+    <link rel="icon" href="Assests/Img/banner-pic.webp" type="image/icon type">
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="Assests/CSS/style.css">
+
+    <!-- Link To Locomotive CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+     <!-- Link To Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Pre-Loader -->
+    <div id="preloader">
+        <h3>Magic</h3>
+        <h3>in the</h3>
+        <h3>Making...</h3>
+    </div>
+
+    <special-header></special-header>
+
+    <!-- Home -->
+    <div id="main">
+        <div id="page">
+            <h1 id="h1Text">Unleash Your Imagination</h1>
+            <p id = "pText">Welcome to Our AI-powered image generator transforms your ideas into stunning visuals in just seconds.</p>
+            <button class="generate-btn-home" onclick="location.href='generateImage.html'">
+                <span>Generate</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+            <canvas></canvas>
+        </div>
+
+        <div id="blanKPage"></div>
+
+        <div id="page" class="noButton">
+            <h1>Visualize Ideas Instantly</h1>
+            <p>Whether you're a designer or simply exploring your creative side, our platform turns your ideas into high-quality images in seconds.</p>
+        </div>
+        
+        <div id="blanKPage"></div>
+        
+        <div id="page" class="noButton">
+            <h1>Dynamic Image Creation</h1>
+            <p>Just describe what you want, and our advanced AI will bring your vision to life. Experience a new level of creative freedom with our user-friendly, AI-driven tool.</p>
+        </div>
+        
+        <!-- Infinite Scroll -->
+        <div class="scroll">
+            <p>Unlock a new realm of creative possibilities with our Dynamic Image Creation feature.</p>
+            <p>Unlock a new realm of creative possibilities with our Dynamic Image Creation feature.</p>
+            <p>Unlock a new realm of creative possibilities with our Dynamic Image Creation feature.</p>
+            <p>Unlock a new realm of creative possibilities with our Dynamic Image Creation feature.</p>
+            <p>Unlock a new realm of creative possibilities with our Dynamic Image Creation feature.</p>
+        </div> 
+
+        <!-- Boost Your productivity -->
+        <section class="boost-section">
+            <h5>
+                <span>N</span>
+                <span>E</span>
+                <span class="last">W</span>
+                Nex-generation of AI Image
+            </h5>
+            <h3>Boost Your productivity</h3>
+            <div class="boost-container">
+                <div class="boost-content">
+                    <svg><rect class="one"></rect></svg>
+                    <img src="Assests/Img/thunder.gif" alt="thunder">
+                    <h3>Creative Automation</h3>
+                    <p>Type in your ideas and get images made just for you</p>
+                </div>
+                <div class="boost-content two">
+                    <svg><rect class="two"></rect></svg>
+                    <img src="Assests/Img/broken-chain.gif" alt="chain">
+                    <h3>Time-Saving</h3>
+                    <p>Generate multiple images at once, saving time on repetitive tasks</p>
+                </div>
+                <div class="boost-content three">
+                    <svg><rect class="three"></rect></svg>
+                    <img src="Assests/Img/high-quality.gif" alt="high">
+                    <h3>Optimized Performance</h3>
+                    <p>Produce high-resolution images that are ready for any professional use</p>
+                </div>
+                <div class="boost-content four">
+                    <svg><rect class="four"></rect></svg>
+                    <img src="Assests/Img/strategic-consulting.gif" alt="strategic">
+                    <h3>Streamlined Workflow</h3>
+                    <p>Easily download your images with just one click, reducing unnecessary steps</p>
+                </div>
+            </div>
+        </section>
+        <div class="slider">
+            <div class="slide-track">
+                <!-- 1st 10 slide -->
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_1.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_2.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_3.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_4.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_5.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_6.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_7.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_8.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_1.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_2.jpg" alt="Generated_Img">
+                </div>
+
+                <!-- 2nd 10 slide -->
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_3.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_4.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_5.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_6.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_7.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_8.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_1.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_2.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_3.jpg" alt="Generated_Img">
+                </div>
+                <div class="slide">
+                    <img src="Assests/Img/Generated_Img_4.jpg" alt="Generated_Img">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="rows">
+                <a href="#" class="logo">Gen<span>Art</span>Lab</a>
+                <div class="cols">
+                    <h4>Service</h4>
+                    <p>Custom Image Generation</p>
+                    <p>API Integration</p>
+                    <p>Real-time Image Editing</p>
+                    <p>High-Resolution Downloads</p>
+                </div>
+                <div class="cols">
+                    <h4>Information</h4>
+                    <p>Event</p>
+                    <p>Contact Us</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Services</p>
+                </div>
+                <div class="cols">
+                    <h4>Resources</h4>
+                    <p>Blog</p>
+                    <p>Documentation</p>
+                    <p>FAQs</p>
+                    <p>Community Forum</p>
+                </div>                
+            </div>
+            <div class="line"><span></span></div>
+            <div class="copyright">
+                <p>Made by Group O Members (BUIE)</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Split Text JavaScript -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Link To Locomotive JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- Link To GSAP JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Link To Scroll Trigger JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Link To Header Management JavaScript -->
+    <script src="Assests/JavaScript/HeaderManagement.js"></script>
+
+    <!-- Link To JavaScript -->
+    <script src="Assests/JavaScript/script.js"></script>
+</body>
+</html>

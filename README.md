@@ -1,2 +1,2 @@
 # Final-Year-Project
-As part of my final year at Bankura Unnayani Institute of Engineering, I developed an AI Image Generator as a key project. This web-based application leverages advanced machine learning algorithms to generate high-quality images based on user-provided text input.
+An AI image generator, also known as a text-to-image AI, is a tool that uses artificial intelligence to create images based on text descriptions provided by the user. These tools are trained on massive amounts of visual data and use machine learning to understand the relationships between language and imagery.
