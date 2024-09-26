@@ -430,6 +430,9 @@ canvas{
     box-shadow: 0 6px 13px rgba(11,17,23,0.2);
     border-radius: 10px;
 }
+.slide-track:hover{
+    animation-play-state: paused;
+}
 @keyframes scrolls{
     to{
         transform: translateX(calc(-350px * 10));
