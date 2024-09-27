@@ -1,6 +1,8 @@
 /* <---------- Font ---------> */
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* <---------- Logo -----------> */
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
 
 *{
     margin: 0;
@@ -90,11 +92,14 @@ html,body{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
 }
 #nav>.logo{
+    user-select: none;
+    font-family: "Sofadi One", system-ui;
     font-size: var(--small-font);
     font-weight: 800;
     color: var(--logo-colour);
 }
 #nav>.logo span{
+    font-family: "Sofadi One", system-ui;
     color: #2e2c2c9f;
 }
 #center-nav{
@@ -463,12 +468,14 @@ footer .rows .cols{
     margin-bottom: 20px;
 }
 footer .rows .logo{
+    font-family: "Sofadi One", system-ui;
     font-size: var(--small-medium-font);
     font-weight: 600;
     color: #fdfdfd;
     margin-bottom: 15px;
 }
 footer .rows .logo span{
+    font-family: "Sofadi One", system-ui;
     color: #fdfdfdad;
 }
 footer .rows .cols h4{

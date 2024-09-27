@@ -64,7 +64,7 @@ body{
     justify-content: center;
     margin-bottom: 2rem;
 }
-.r-side img{
+.r-side video{
     width: 100%;
 }
 .step{
@@ -180,7 +180,6 @@ body{
 .r-side video{
     width: 50%;
 }
-
 .create-btm{
     display: flex;
     align-items: center;
@@ -192,7 +191,6 @@ body{
     text-align: center;
     font-size: 30px;
 }
-
 .image-sec-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
